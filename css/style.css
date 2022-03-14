@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 *{
 margin:0;
 padding:0;
@@ -12,8 +15,8 @@ text-decoration: none;}
 max-width:80%;
 margin:auto;
 }
-.bd-dark{
-background-color: #255A34;
+.bg-dark{
+background-color: #252A34;
 color:#ffff;
 
 }
@@ -21,16 +24,33 @@ color:#ffff;
 color: #ff2e63;
 
 }
+.text-center{
+text-align: center;
+}
+.l-heading{
+font-size: 3rem;
+text-transform: uppercase;
+}
+.py-1{
+padding: 1.5rem 0;
+}
+.btn{ background-color: #08D9D6; color: #ffff; padding: 0.75rem 1.5rem; border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; -ms-border-radius:5px; -o-border-radius:5px; }
+.btn:hover{
+background-color: #ff2e63;
+}
 #navbar{
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 1rem;;
+padding: 1rem;
+position: sticky;
+top: 0;
+z-index: 1;
 }
 #navbar .logo img{
 width: 80px;
 }
-#navbar .ul {
+#navbar ul {
 list-style: none;
 display: flex;}
 #navbar ul li a{
@@ -40,4 +60,7 @@ padding: 1rem;
 #navbar ul li a:hover{
 background-color: #08D9D6;
 
+}
+#showcase{
+background: #252a34 url(../images/main.jpg) no repeat center center/cover;
 }
